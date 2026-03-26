@@ -1,0 +1,82 @@
+import random
+
+zodiacs = {
+"aries": {
+      "element": "fire",
+      "description": "As a fire sign, you are aries. Aries are known for being natural leaders, bold, and sharp. You are protective of your loved ones and people often lean on you as you are natural leader",
+      "nicknames": ["Fireball", "Firecracker", "Spark", "The blazer"]
+},
+"leo": {
+      "element": "fire",
+      "description": "As a fire sign, you are leo. Leo are known for being confident and charismatic, creative.You have that magnetic aura because of what people either feel intimidate or attracted to you. You are so very inspiring. You arr creative in your own way and you seem to be calm under pressure",
+      "nicknames": ["Little flame", "Icon", "The boss", "Golden"]
+},
+"sagittarius": {
+      "element": "fire",
+      "description": "As a fire sign, you are sagittarius. Sagittarius are free spirits who seeks freedom. You are brutally honest. You are always on a hunt for new adventure.You are optimistic and you don't give up easily. You might look reckless but you are very sharp and clever underneath. If your freedom is in danger in any situation, you will leave within seconds. people have to make you feel alive to keep you. You have deep thoughts even when you look kinda reckless. You have very strong intuition",
+      "nicknames": ["Little rebel", "Wildflower", "Sunshine", "Beamy"]
+},
+"capricorn": {
+      "element": "earth",
+      "description": "As a earth sign, you are capricorn. capricorn are known for being ambitious and disciplined. you are strong willed. You might be little possessive and protective of your loved ones, that's just your love language. You are good at whatever you do. You are confident because of that many might be jealous of you. You might seem older than your age, not because of looks but because of your mind and thoughts. You are very reliable and give golden advices, if a capricorn give a advice to anyone, they should feel honoured and keep it. You are hard to read.",
+      "nicknames": ["GOAT", "Cappy-bara", "The pillar", "Rockstar"]
+},
+"taurus": {
+      "element": "earth",
+      "description": "As a earth sign, you are taurus. Taurus are known for being determined and stable. You are veryy loyal. You are the mother/father of the group, warm and always taking care of others. You feel like warm hug. you are type of person people could always run to while crying. If anyone have taurus in life, they should consider themselves  lucky for getting all that warmth",
+      "nicknames": ["Terra", "Homie", "Clover", "T-bee"]
+},
+"virgo": {
+      "element": "earth",
+      "description": "As a earth sign, you are virgo. Virgo are known for being analytic and hardworking. You are very sharp and practical. You have that healing energy that make people open up to you. As a friend you are veryyy helpful, people can litterally come to you for anything,from broken love-life to broken vase, you have solution for everything. you are selfless when it comes to your loved ones, you give selflessly. you are talented and very hardworking which makes you achieve things well. you can do anything if you convinced yourself to do it.",
+      "nicknames": ["Google", "Sharpie", "Sun", "Sage"]
+},
+"scorpio": {
+      "element": "water",
+      "description": "As a water sign, you are scorpio. Scorpio have that magnetic yet dark aura, people might be intimidated of you. you are intense. You have laser sharp intuition. You are very confident and attractive. You  are mysterious in your own way. You have strong presence, people notice you the moment you step into the room. You are witty and classy. You are kind of person people are intimidated of but still feel drawn to.Personally speaking, scorpio people are damn cool.",
+      "nicknames": ["Phoenix", "Viper", "Magnet", "Pinchy"]
+},
+"cancer": {
+      "element": "water",
+      "description": "As a water sign, you are cancer. Cancer are known for being nuturing, protective. You seem tough but are very soft from inside. You wear your heart on your sleeves. You are likely to be homebody. You are very sensitive but strong at the same time. your strength is in the way you protect your loved ones, how you take stand for yourself even when hurt, and staying kind, warm and loving no matter what happened. You feel like calm in chaos. You love deeply, care deeply, feel things deeply, and always just give and give. Being loved by a cancer person is being the luckiest",
+      "nicknames": ["Softie", "Luna", "Pearl", "Crabbyy"]
+},
+"pisces": {
+      "element": "water",
+      "description": "As a water sign, you are a pisces. Pisces are known for being creative, empathetic and dreamy. You dream big and are capable of achieving what you dreamt of. Your intuition is on crazy level. You often pretend to be fine but carry a lot inside without letting anyone know. Your thoughts are magical. You often inspire the people around you a lot without even realising. You are tougher than you look. You are very wise, pisces is said to carry the wisdom from all the signs that come before it. You feel veryyyy deeply.",
+      "nicknames": ["Marshmallow", "Bubbles", "Oracle", "Muse"]
+},
+"gemini": {
+      "element": "air",
+      "description": "As a air sign, you are gemini. Gemini are known for being cunning, curious and adaptable. You are fun to be around. You are very social and have sharp wit. You are funny and energetic. You give vibes of sunshine but your cunning and witty nature balances it out. You are said to be have two sides, which is somewhat true, at first galance you seem harmless and fun going, but once someone get on your bad side, they get to face that cunning and witty side, people can never beat you in mind games. You exactly know which things to say to make someone squirm. But to loved ones, You are funny, heart of the group, that keeps the energy of the group high.",
+      "nicknames": ["Giggles", "Goofball", "Nova", "Gem"]
+},
+"libra": {
+      "element": "air",
+      "description": "As a air sign, you are libra. Libra are known for seeking balance and justice. You often represents harmony. You are social butterfly, always blending in without a effort. You have that soft yet magnetic aura, almost angelic. You often avoid conflicts and seek peace. You are the peacemaker. You are effortlessly charming. You never chase but always attract whatever you want. You are like angel in human form. You are as sweet as honey and charmimg.",
+      "nicknames": ["Angel", "Charmer", "Petal", "Starlight"]
+},
+"aquarius": {
+      "element": "air",
+      "description": "As a air sign, you are aquarius. Aquarius are known for being intellectual. You are rebel and little quirky. You think outside the box always. You are not afraid of being weird and always be yourself without any shame. You are very independent. You are open-minded and often think big. You are clever and little funny, quirky at the same time because of that people enjoy being around you. Because of your nature you often have many friends and people around you. You are always at the top of any field you are in and you perform well in almost everything.",
+      "nicknames": ["Stardust", "Ace", "Oddball", "Arie"]
+}
+}
+
+def give_description(sign):
+    print("\n" + zodiacs[sign]["description"])
+    
+def give_nickname(sign):
+    print("\nNickname: " + random.choice (zodiacs[sign]["nicknames"]))
+    
+print("🌸 Welcome to the lavy's Zodiac reading! 🌸")
+
+name = input("\nWhat's your name? ")
+
+print(f"\nHello {name}! Let's see how you are based on your stars...")
+sign = input("\nWhat's your zodiac sign?  ").lower()
+
+
+give_description(sign)
+give_nickname(sign)
+
